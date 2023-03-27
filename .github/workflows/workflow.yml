@@ -1,0 +1,17 @@
+name: Workflow
+
+on: push
+
+jobs:
+  super-lint:
+    name: Lint code base
+    runs-on: mac-os
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v2
+
+      - name: Run Workflow
+        uses: github/workflow@v4
+        env:
+          DEFAULT_BRANCH: main
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
