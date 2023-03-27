@@ -2,3 +2,4 @@
 - Yellow status means, it currently running the workflow and checking the codes.
 - Green status means, all the checks have been passed.
 - Red status means, one of the checks got failed.
+- We can also check it in Actions tab listed above.
